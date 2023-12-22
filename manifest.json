@@ -1,0 +1,35 @@
+{
+    "name": "GitHub Square PFP",
+    "description": "Removes the circular framing for GitHub profile pictures, instead leaving them as full squares.",
+    "developer":
+    {
+        "name": "Kojo Bailey"
+    },
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "manifest_version": 3,
+    "mod":
+    {
+        "license": "license.txt",
+        "payload":
+        {
+            "page_styles":
+            [
+                {
+                    "css":
+                    [
+                        "webmodding/github.css"
+                    ],
+                    "matches":
+                    [
+                        "https://*.github.com/*"
+                    ]
+                }
+            ]
+        },
+        "schema_version": 1
+    },
+    "version": "1.0.2"
+}
